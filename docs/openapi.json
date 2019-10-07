@@ -156,8 +156,34 @@
       }
     },
     "/functions": {
-      "summary": "IBM API path for unit 6",
       "post": {
+        "summary": "IBM API path for unit",
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "api_key",
+            "schema": {
+              "type": "string"
+            },
+            "description": "API Key for unit 6"
+          },
+          {
+            "in": "formData",
+            "name": "url",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Website running the code"
+          },
+          {
+            "in": "formData",
+            "name": "name",
+            "schema": {
+              "type": "string"
+            },
+            "description": "the user's name"
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful Response",
@@ -168,7 +194,6 @@
             }
           }
         },
-        "summary": "",
         "description": "",
         "operationId": "functions"
       }
